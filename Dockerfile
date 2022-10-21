@@ -34,7 +34,7 @@ RUN a2disconf other-vhosts-access-log
 RUN sed -i 's/Listen 80/Listen 8080/g' /etc/apache2/ports.conf
 RUN sed -i 's/Listen 443/Listen 8443/g' /etc/apache2/ports.conf
 RUN a2ensite hw-http.conf hw-https.conf
-RUN systemctl restart apache2
+RUN /etc/init.d/apache2 restart
 
 # System account
 RUN useradd -r -u 1001 user
