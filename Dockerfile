@@ -8,7 +8,7 @@ LABEL maintainer="Artiom Lichtenstein, Hitesh Patel" version="1.0.6"
 
 # Core dependencies
 RUN apt-get update && \
-	apt-get install -y apache2 php7.0 libapache2-mod-php && \
+	apt-get install -y apache2 php8.2 libapache2-mod-php && \
 	apt-get autoclean -y && \
 	apt-get autoremove -y && \
 	apt-get clean -y && \
