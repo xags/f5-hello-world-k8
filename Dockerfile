@@ -29,7 +29,7 @@ COPY /etc/ssl/self.key /etc/apache2/ssl/self.key
 RUN cat /etc/apache2/apache2.conf.append | tee -a /etc/apache2/apache2.conf
 RUN htpasswd -cb /etc/apache2/.htpasswd user user
 RUN a2dissite 000-default.conf
-RUN a2enmod ssl headers php7.4
+RUN a2enmod ssl headers php8.2
 RUN a2disconf other-vhosts-access-log
 RUN sed -i 's/Listen 80/Listen 8080/g' /etc/apache2/ports.conf
 RUN sed -i 's/Listen 443/Listen 8443/g' /etc/apache2/ports.conf
