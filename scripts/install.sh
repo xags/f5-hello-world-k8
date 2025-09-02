@@ -6,7 +6,7 @@
 
 # Core dependencies
 sudo apt-get update
-sudo apt-get -y install apache2 curl git php7.0
+sudo apt-get -y install apache2 curl git php8.4
 curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo git clone https://github.com/f5devcentral/f5-hello-world.git /var/www/adct
