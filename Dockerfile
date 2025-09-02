@@ -9,7 +9,7 @@ LABEL maintainer="Artiom Lichtenstein" version="1.0.5"
 
 # Core dependencies
 RUN apt-get update && \
-	apt-get install -y apache2 php7.0 && \
+	apt-get install -y apache2 php8.4 && \
 	apt-get autoclean -y && \
 	apt-get autoremove -y && \
 	apt-get clean -y && \
